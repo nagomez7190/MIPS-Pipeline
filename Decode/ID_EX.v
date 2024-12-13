@@ -1,3 +1,5 @@
+This code will be implemented in the final Pipeline module as separate in order to control the amount of ports neccessary for my specific fpga
+
 `timescale 1ns / 1ps
 
 module ID_EX (
