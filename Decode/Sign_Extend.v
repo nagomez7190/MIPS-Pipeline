@@ -6,3 +6,4 @@ module Sign_Extend (
 );
     assign sign_ext = {{16{imm[15]}}, imm}; // Sign-extend 16 bits to 32 bits
 endmodule
+
