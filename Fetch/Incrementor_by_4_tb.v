@@ -10,7 +10,6 @@ module Incrementor_by_4_tb;
         .pc_out(pc_out)
     );
     initial begin
-        // Monitor the input and output signals
         $monitor("Time: %0dns | PC In: %h | PC Out: %h", $time, pc_in, pc_out);
         // Test Case 1: Initial PC value
         pc_in = 32'h00000000; // Set PC to 0
