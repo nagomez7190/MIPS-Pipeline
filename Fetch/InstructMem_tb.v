@@ -2,19 +2,15 @@
 
 module InstructMem_tb;
 
-    // Testbench variables
     reg [6:0] add;            // Input address
     wire [31:0] instruc;      // Output instruction
 
-    // Instantiate the InstructMem module
     InstructMem Inst (
         .add(add),
         .instruc(instruc)
     );
 
-    // Test sequence
     initial begin
-        // Monitor the input and output signals
         $monitor("Time: %0dns | Address: %h | Instruction: %h", $time, add, instruc);
         // Test Case 1: Fetch instruction at address 0
         add = 7'b0000000; // Address 0x00000000
