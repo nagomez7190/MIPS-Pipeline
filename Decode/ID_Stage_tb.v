@@ -16,7 +16,7 @@ module ID_Stage_tb;
 
     initial begin
         clk = 0;
-        forever #5 clk = ~clk; // 10 ns clock period
+        forever #5 clk = ~clk; 
     end
 
     initial begin
