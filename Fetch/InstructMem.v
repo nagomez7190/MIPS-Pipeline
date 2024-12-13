@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module InstructMem(
     input [6:0] add,
     output reg [31:0] instruc
