@@ -10,17 +10,17 @@ module IF_Stage_tb;
 
     IF_Stage MOON (.clk(clk),.reset(reset),.pcsrc(pcsrc), .pc_out(pc_out),.if_id_ir(if_id_ir),.if_id_npc(if_id_npc));
 
-    // Clock 
+
     initial begin
         clk = 0;
-        forever #5 clk = ~clk; // 10 ns clock period
+        forever #5 clk = ~clk; 
     end
 
     initial begin
         // Monitor the key signals
         $monitor("Time: %0dns | Reset: %b | PCSrc: %b | PC Out: %h | NPC: %h | IR: %h",
                  $time, reset, pcsrc, pc_out, if_id_npc, if_id_ir);
-        // Initialize inputs
+      
         reset = 1;
         pcsrc = 0;
         #10; // Wait for one clock cycle
