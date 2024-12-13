@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module ProgramCounter(
     input clk,            
     input reset,         
